@@ -44,7 +44,7 @@
         <div class="col-sm">
           <div
             id="fascinating"
-            onclick="console.log('You have clicked on \'fascinating\'!')"
+            onclick="const selection = window.getSelection(); const range = document.createRange(); range.selectNodeContents(document.getElementById('fascinating').getElementsByTagName('p')[0]); selection.removeAllRanges(); selection.addRange(range);"
           >
             <img
               class="img-fluid gif-images"
