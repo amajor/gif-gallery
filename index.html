@@ -3,10 +3,18 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    >
     <link rel="stylesheet" href="styles.css">
 
     <title>Gif Gallery</title>
@@ -19,34 +27,137 @@
 
       <div class="row">
         <div class="col-sm">
-          <img class="img-fluid gif-images" src="https://media.giphy.com/media/XbfbMoFQKPyms/giphy.gif" />
-          <p>https://media.giphy.com/media/XbfbMoFQKPyms/giphy.gif</p>
+          <div
+            id="thrilling-heroics"
+            onclick="selectAndCopy('thrilling-heroics')"
+          >
+            <img
+              class="img-fluid gif-images"
+              src="https://media.giphy.com/media/XbfbMoFQKPyms/giphy.gif"
+            />
+            <p>
+              https://media.giphy.com/media/XbfbMoFQKPyms/giphy.gif
+            </p>
+          </div>
         </div>
+
         <div class="col-sm">
-          <img class="img-fluid gif-images" src="https://media.giphy.com/media/tWTHctXXVBjXy/giphy.gif" />
-          <p>https://media.giphy.com/media/tWTHctXXVBjXy/giphy.gif</p>
+          <div
+            id="fascinating"
+            onclick="selectAndCopy('fascinating')"
+          >
+            <img
+              class="img-fluid gif-images"
+              src="https://media.giphy.com/media/tWTHctXXVBjXy/giphy.gif"
+            />
+            <p>
+              https://media.giphy.com/media/tWTHctXXVBjXy/giphy.gif
+            </p>
+          </div>
         </div>
+
         <div class="col-sm">
-          <img class="img-fluid gif-images" src="https://media.giphy.com/media/6YCelxMJo0txK/giphy.gif" />
-          <p>https://media.giphy.com/media/6YCelxMJo0txK/giphy.gif</p>
+          <div
+            id="excited-lucille"
+            onclick="selectAndCopy('excited-lucille')"
+          >
+            <img
+              class="img-fluid gif-images"
+              src="https://media.giphy.com/media/6YCelxMJo0txK/giphy.gif"
+            />
+            <p>
+              https://media.giphy.com/media/6YCelxMJo0txK/giphy.gif
+            </p>
+          </div>
         </div>
+
         <div class="col-sm">
-          <img class="img-fluid gif-images" src="https://media.giphy.com/media/FmyCxAjnOP5Di/giphy.gif" />
-          <p>https://media.giphy.com/media/FmyCxAjnOP5Di/giphy.gif</p>
+          <div
+            id="nedry"
+            onclick="selectAndCopy('nedry')"
+          >
+            <img
+              class="img-fluid gif-images"
+              src="https://media.giphy.com/media/FmyCxAjnOP5Di/giphy.gif"
+            />
+            <p>
+              https://media.giphy.com/media/FmyCxAjnOP5Di/giphy.gif
+            </p>
+          </div>
         </div>
+
         <div class="col-sm">
-          <img class="img-fluid gif-images" src="https://media.giphy.com/media/NaA840F7VJSHS/giphy.gif" />
-          <p>https://media.giphy.com/media/NaA840F7VJSHS/giphy.gif</p>
+          <div
+            id="sad-doctor"
+            onclick="selectAndCopy('sad-doctor')"
+          >
+            <img
+              class="img-fluid gif-images"
+              src="https://media.giphy.com/media/NaA840F7VJSHS/giphy.gif"
+            />
+            <p>
+              https://media.giphy.com/media/NaA840F7VJSHS/giphy.gif
+            </p>
+          </div>
         </div>
+
         <div class="col-sm">
-          <img class="img-fluid gif-images" src="https://media.giphy.com/media/bKnEnd65zqxfq/giphy.gif" />
-          <p>https://media.giphy.com/media/bKnEnd65zqxfq/giphy.gif</p>
+          <div
+            id="make-it-so"
+            onclick="selectAndCopy('make-it-so')"
+          >
+            <img
+              class="img-fluid gif-images"
+              src="https://media.giphy.com/media/bKnEnd65zqxfq/giphy.gif"
+            />
+            <p>
+              https://media.giphy.com/media/bKnEnd65zqxfq/giphy.gif
+            </p>
+          </div>
         </div>
+
         <div class="col-sm">
-          <img class="img-fluid gif-images" src="https://media.giphy.com/media/LZ16MmeU5SDhC/giphy.gif" />
-          <p>https://media.giphy.com/media/LZ16MmeU5SDhC/giphy.gif</p>
+          <div
+            id="attendance-required"
+            onclick="selectAndCopy('attendance-required')"
+          >
+            <img
+              class="img-fluid gif-images"
+              src="https://media.giphy.com/media/LZ16MmeU5SDhC/giphy.gif"
+            />
+            <p>
+              https://media.giphy.com/media/LZ16MmeU5SDhC/giphy.gif
+            </p>
+          </div>
         </div>
+
       </div>
     </div>
+
+    <script>
+      function selectText(id) {
+        const gifSetElement = document.getElementById(id);
+        const textElement = gifSetElement.getElementsByTagName('p')[0];
+
+        const selection = window.getSelection();
+        const range = document.createRange();
+
+        range.selectNodeContents(textElement);
+
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+
+      function copyText() {
+        document.execCommand("Copy");
+        console.log("The url for the gif has been copied to your clipboard!");
+        console.log("Now all you need to do is paste it somewhere. Huzzah!");
+      }
+
+      function selectAndCopy(id) {
+        selectText(id);
+        copyText();
+      }
+    </script>
   </body>
 </html>
