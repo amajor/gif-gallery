@@ -147,6 +147,12 @@
         selection.removeAllRanges();
         selection.addRange(range);
       }
+
+      function copyText() {
+        document.execCommand("Copy");
+        console.log("The url for the gif has been copied to your clipboard!");
+        console.log("Now all you need to do is paste it somewhere. Huzzah!");
+      }
     </script>
   </body>
 </html>
