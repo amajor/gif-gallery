@@ -29,7 +29,7 @@
         <div class="col-sm">
           <div
             id="thrilling-heroics"
-            onclick="const selection = window.getSelection(); const range = document.createRange(); range.selectNodeContents(document.getElementById('thrilling-heroics').getElementsByTagName('p')[0]); selection.removeAllRanges(); selection.addRange(range);"
+            onclick="selectText()"
           >
             <img
               class="img-fluid gif-images"
@@ -133,5 +133,22 @@
 
       </div>
     </div>
+
+    <script>
+      function selectText() {
+        console.log("We're now using a function to select text!");
+
+        const gifSetElement = document.getElementById('thrilling-heroics');
+        const textElement = gifSetElement.getElementsByTagName('p')[0];
+
+        const selection = window.getSelection();
+        const range = document.createRange();
+
+        range.selectNodeContents(textElement);
+
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+    </script>
   </body>
 </html>
